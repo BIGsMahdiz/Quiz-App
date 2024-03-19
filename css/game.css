@@ -1,0 +1,166 @@
+#loader {
+  margin-top: 200px;
+  margin-left: 260px;
+  width: 120px;
+  height: 120px;
+  border: 7px solid #6757d9;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  animation: rotation 1.5s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  background-color: #eaecf2;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  flex-direction: column;
+  width: 700px;
+}
+
+#container {
+  display: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  align-items: center;
+}
+
+.header div {
+  display: flex;
+  align-items: center;
+}
+
+.header p {
+  color: #6757d9;
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.header span {
+  display: inline-block;
+  background-color: #fff;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: #6757d9;
+  border-radius: 4px;
+}
+
+#category {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#category p {
+  color: #6757d9;
+  font-size: 2.1rem;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+#category span {
+  color: #2d3436;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#question-box {
+  display: flex;
+  flex-direction: column;
+}
+
+h3 {
+  background-color: #6757d9;
+  color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 50px 0 30px;
+}
+
+.answer-text {
+  background-color: #fff;
+  border: none;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  border-radius: 15px;
+  font-weight: 400;
+  text-align: left;
+  cursor: pointer;
+  border: 2px solid #fff;
+  transition: all 0.2s ease-in;
+}
+
+.answer-text:hover {
+  background-color: #eeedfb;
+  border: 2px solid #fff;
+}
+
+#next-button,
+#finish-button {
+  color: #6757d9;
+  font-size: 1rem;
+  background-color: #eeedfb;
+  border: 2px solid #6757d9;
+  border-radius: 15px;
+  padding: 8px 15px;
+  margin: 20px 20px 0 0;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+#next-button:hover,
+#finish-button:hover {
+  background-color: #6757d9;
+  color: #fff;
+}
+
+.correct {
+  background-color: #5bd7bc;
+}
+
+.incorrect {
+  background-color: #fe6681;
+}
+
+.correct:hover {
+  background-color: #5bd7bc;
+}
+
+.incorrect:hover {
+  background-color: #fe6681;
+}
+
+.mouse {
+  cursor: no-drop;
+}
+
+#error {
+  color: brown;
+  font-weight: 600;
+  text-decoration: dashed;
+  display: none;
+  text-align: center;
+  margin-top: 20%;
+}

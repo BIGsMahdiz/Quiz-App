@@ -1,0 +1,18 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: cursive;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e6e9f0;
+  max-width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  flex-direction: column;
+  padding-top: 100px;
+  text-align: center;
+}
